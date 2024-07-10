@@ -2,14 +2,66 @@
 @import url("global.css");
 
 #root {
+  /* min-height: 100vh; */
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+  flex-direction: row;
+  align-items: center; /* center horizontally */
+  /* justify-content: center; */ /* center vertically */
   padding: 24px;
   background-color: var(--purple-100);
-  /* text-align: center; */
-} /*
+  gap: 24px;
+}
 
+.account_container {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 24px;
+  background: var(--green-background);
+  /* flex-shrink: 1; */
+}
+
+.file_manager_container {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.h1_heavy {
+  color: var(--text-main300);
+  font-family: var(--h1-heavy-family);
+  font-size: var(--h1-heavy-size);
+  font-weight: var(--h1-heavy-weight);
+  font-style: var(--h1-heavy-style);
+  line-height: var(--h1-heavy-line-height-rem);
+}
+.h2_heavy {
+  color: var(--text-main300);
+  font-family: var(--h2-heavy-family);
+  font-size: var(--h2-heavy-size);
+  font-weight: var(--h2-heavy-weight);
+  font-style: var(--h2-heavy-style);
+  line-height: var(--h2-heavy-line-height-rem);
+}
+#oktopus_title {
+  flex: 1;
+}
+
+.file_manager_content {
+  flex: 9;
+  background: var(--green-background);
+  border-radius: 24px;
+  width: 100%;
+  padding: 24px;
+  box-sizing: border-box;
+}
+/*
 .logo {
   height: 6em;
   padding: 1.5em;
