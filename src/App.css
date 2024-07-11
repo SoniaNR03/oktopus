@@ -3,7 +3,7 @@
 
 #root {
   /* min-height: 100vh; */
-  height: 100%;
+  height: calc(100% - 24px * 2);
   display: flex;
   flex-direction: row;
   align-items: center; /* center horizontally */
@@ -33,13 +33,14 @@
   width: 100%;
 }
 
+/* TODO: change text size according to window size */
 .h1_heavy {
   color: var(--text-main300);
   font-family: var(--h1-heavy-family);
   font-size: var(--h1-heavy-size);
   font-weight: var(--h1-heavy-weight);
   font-style: var(--h1-heavy-style);
-  line-height: var(--h1-heavy-line-height-rem);
+  /* line-height: var(--h1-heavy-line-height-rem); */
 }
 .h2_heavy {
   color: var(--text-main300);
@@ -47,7 +48,7 @@
   font-size: var(--h2-heavy-size);
   font-weight: var(--h2-heavy-weight);
   font-style: var(--h2-heavy-style);
-  line-height: var(--h2-heavy-line-height-rem);
+  /* line-height: var(--h2-heavy-line-height-rem); */
 }
 #oktopus_title {
   flex: 1;
@@ -57,9 +58,8 @@
   flex: 9;
   background: var(--green-background);
   border-radius: 24px;
-  width: 100%;
+  width: calc(100% - 24px * 2);
   padding: 24px;
-  box-sizing: border-box;
 }
 /*
 .logo {
