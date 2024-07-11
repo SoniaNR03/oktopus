@@ -1,9 +1,17 @@
 /* FOR GENERAL PURPOSE */
 @import url("global.css");
 
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
+
   /* Reset other properties as needed */
 }
 /* :root {
