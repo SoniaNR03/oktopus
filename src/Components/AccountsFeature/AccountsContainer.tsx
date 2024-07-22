@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import profileIcon from "../../assets/icons/profile-icon.svg";
 import addIcon from "../../assets/icons/add-icon.svg";
+import { Link, useNavigate } from "react-router-dom";
 
 import { useState } from "react";
 
@@ -49,8 +50,11 @@ function AddProfileButton({ handleAddProfile }: Props_addProfileButton) {
 
 export default function Accounts() {
   const [ProfileList, setProfileList] = useState<Props_profile[]>([]);
+  const navigate = useNavigate();
 
   function handleAddProfile() {
+    navigate("/login");
+
     const newProfile = {
       name: "New User",
       email: "newUser@gmail.com",
