@@ -1,7 +1,6 @@
 import "./App.css";
 import Accounts from "./Components/AccountsFeature/AccountsContainer";
 import FileManager from "./Components/FileManagerFeature/FileManager";
-import FileManager from "./Components/FileManager";
 import Layout from "./Components/Layout";
 import Login from "./features/auth/component/Login";
 import { Routes, Route } from "react-router-dom";
