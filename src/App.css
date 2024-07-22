@@ -13,17 +13,6 @@
   gap: 24px;
 }
 
-.account_container {
-  flex: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 24px;
-  background: var(--green-background);
-  /* flex-shrink: 1; */
-}
-
 .file_manager_container {
   flex: 3;
   display: flex;
@@ -50,6 +39,23 @@
   font-style: var(--h2-heavy-style);
   /* line-height: var(--h2-heavy-line-height-rem); */
 }
+
+.h3_regular {
+  color: var(--text-500);
+  font-family: var(--h3-regular-family);
+  font-size: var(--h3-regular-size);
+  font-weight: var(--h3-regular-weight);
+  font-style: var(--h3-regular-style);
+  /* line-height: var(--h3-regular-line-height-rem); */
+}
+
+.h4_regular {
+  color: var(--text-500);
+  font-family: var(--h4-regular-family);
+  font-size: var(--h4-regular-size);
+  font-weight: var(--h4-regular-weight);
+  font-style: var(--h4-regular-style);
+}
 #oktopus_title {
   flex: 1;
 }
@@ -60,6 +66,70 @@
   border-radius: 24px;
   width: calc(100% - 24px * 2);
   padding: 24px;
+}
+
+/* ACCOUNT FEATURE */
+.account_container {
+  flex: 1;
+  height: calc(100% - 24px * 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 24px;
+  background: var(--green-background);
+  padding: 24px;
+  gap: 16px;
+}
+
+.profile_side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.profile-button {
+  width: calc(100% - 12px * 2);
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: center;
+  justify-content: left;
+  background: var(--purple-500);
+  border-radius: 16px;
+  padding: 12px;
+  /* TODO cursor: pointer;
+  transition: background-color 0.25s; */
+}
+
+.profile_side hr {
+  width: 100%;
+  border: 2px solid var(--purple-700);
+}
+
+.profile-addButton:hover {
+  /* TODO */
+  background: var(--purple-400);
+}
+/* TODO: PRESS BUTTON WITHE ICON */
+
+.text-profile-container p {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+}
+
+.profile_list_i {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: scroll;
+}
+
+#account_title {
+  text-align: center;
 }
 /*
 .logo {

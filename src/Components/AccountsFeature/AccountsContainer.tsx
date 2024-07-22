@@ -54,6 +54,7 @@ export default function Accounts() {
 
   function handleAddProfile() {
     navigate("/login");
+
     const newProfile = {
       name: "New User",
       email: "newUser@gmail.com",

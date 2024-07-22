@@ -105,6 +105,12 @@
   --h3-extralight-style: normal;
   --h3-extralight-line-height: 42px;
   --h3-extralight-line-height-rem: 2.625rem;
+  --h4-regular-family: "Poppins";
+  --h4-regular-size: 16px;
+  --h4-regular-weight: 400;
+  --h4-regular-style: normal;
+  --h4-regular-line-height: 14px;
+  --h4-regular-line-height-rem: 0.875rem;
   --h5-regular-family: "Poppins";
   --h5-regular-size: 12px;
   --h5-regular-size-rem: 0.75rem;
